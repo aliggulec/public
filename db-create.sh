@@ -1,14 +1,6 @@
 #!/bin/bash
 
-db=("alarm_db"
-    "dnp_db"
-    "event_db"
-    "function_db"
-    "control_db"
-    "measurement_db"
-    "nfs_db"
-    "opc_db"
-    "modbus_db")
+db=("enter database name")
 
 status=$(kubectl get pods  postgres-0 -o jsonpath="{.status.phase}")
 
